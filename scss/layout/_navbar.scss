@@ -3,11 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-  }
-
-  &__number {
-    display: none;
   }
 
   &__list {
@@ -15,19 +10,19 @@
   }
 
   &__social-media{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 15px;
   }
 
   &__number{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 7px;
   }
 
   &__burger-btn{
-    display: none;
+    display: block;
   }
 
   &__modal {
@@ -69,7 +64,16 @@
 
 
 @include mobile-large {
-  
+  .nav {
+
+    &__social-media {
+      display: block;
+    }
+
+    &__number{
+      display: block;
+    }
+  }
 }
 
 @include tablet {
@@ -78,9 +82,18 @@
       display: flex;
       gap: 20px;
     }
+
+    &__burger-btn{
+      display: none;
+    }
+
   }
 }
 
 @include desktop {
-  // nimadirlar
+  .nav{
+    &__number{
+      display: block;
+    }
+  }
 }

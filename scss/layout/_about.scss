@@ -1,0 +1,225 @@
+.about {
+    padding-top: 80px;
+
+    &__top_title {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #282B22;
+
+        padding-bottom: 50px;
+    }
+
+    &__top_list {
+        border-top: 1px solid #282B22;
+        border-bottom: 1px solid #282B22;
+
+        &__item {
+            display: flex;
+            gap: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            & img {
+                width: 18px;
+                height: 18px;
+            }
+
+            & p {
+                font-family: $font-family;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 145%;
+                color: #282B22;
+                opacity: 0.8;
+            }
+        }
+
+        &__item:nth-child(1) {
+            border-bottom: 1px solid #282B22;
+        }
+    }
+
+    &__bottom_title {
+        padding-top: 80px;
+        padding-bottom: 50px;
+
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 135%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #282B22;
+    }
+
+    &__bottom_list {
+
+        &__item {
+            display: flex;
+            gap: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            & span {
+                font-family: $font-family;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 130%;
+                color: #282B22;
+                opacity: 0.3;
+            }
+
+            & div h4 {
+                padding-bottom: 10px;
+                font-family: $font-family;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 130%;
+                color: #282B22;
+            }
+
+            & div p {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #282B22;
+            }
+        }
+
+        &__item:nth-child(1) {
+            border-top: 1px solid #282B22;
+            border-bottom: 1px solid #282B22;
+        }
+
+        &__item:nth-child(2) {
+            border-bottom: 1px solid #282B22;
+        }
+
+        &__item:nth-child(3) {
+            border-bottom: 1px solid #282B22;
+        }
+
+        &__item:nth-child(4) {
+            border-bottom: 1px solid #282B22;
+        }
+
+        &__item:nth-child(5) {
+            border-bottom: 1px solid #282B22;
+        }
+    }
+}
+
+@include mobile-large {
+    .about {
+        padding-top: 100px;
+
+        &__top_title {
+            font-size: 28px;
+        }
+
+        &__top_list {
+            display: flex;
+
+            &__item:nth-child(1) {
+                border-bottom: none;
+                border-right: 1px solid #282B22;
+                padding-right: 30px;
+            }
+
+            &__item:nth-child(2) {
+                padding-left: 30px;
+            }
+        }
+
+        &__bottom_title {
+            padding-top: 100px;
+            padding-bottom: 65px;
+            font-size: 36px;
+            line-height: 125%;
+        }
+
+        &__bottom_list {
+
+            &__item {
+                padding-bottom: 0;
+                
+                & span {
+                    font-size: 24px;
+                    line-height: 100%;
+                    padding-right: 272px;
+                    border-right: 1px solid #282B22;
+                }
+
+                & div {
+                    padding-left: 30px;
+                    padding-bottom: 35px;
+
+                    & h4 {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+@include tablet {
+    .about {
+        padding-top: 140px;
+
+        &__top_title {
+            font-size: 36px;
+        }
+
+        &__top_list {
+
+            &__item:nth-child(1) {
+                padding-right: 77px;
+            }
+
+            &__item:nth-child(2) {
+                padding-left: 77px;
+            }
+
+            &__item p {
+                font-size: 18px;
+            }
+        }
+
+        &__bottom_title {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            font-size: 46px;
+        }
+
+        &__bottom_list {
+
+            &__item {
+                
+                & span {
+                  padding-right: 452px;
+                }
+
+                & div {
+
+                    & h4 {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+@include desktop {
+    .about {
+
+        &__bottom_list__item span {
+            padding-right: 572px;
+        }
+    }
+}

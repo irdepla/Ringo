@@ -1,12 +1,12 @@
 .container {
   max-width: 100%;
-  padding: 0 $container-padding;
+  padding: 15px $container-padding;
   margin: 0 auto;
 }
 
 @include mobile-large {
   .container {
-    max-width: 600px;
+    max-width: 620px;
   }
 }
 
