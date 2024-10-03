@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/main.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container nav__wrapper">
+          <div class="nav__logo">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="">
+                <span>Напрямки</span>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="">
+                <span>Про компанію</span>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="">
+                <span>Переваги</span>
+              </a>
+            </li>
+            <li class="nav__list__item">
+              <a href="">
+                <span>Етапи роботи</span>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#" class="nav__social-media">
+            <img src="./assets/images/instagram.svg" alt="instagram logo">
+            <img src="./assets/images/facebook.svg" alt="instagram logo">
+          </a>
+
+          <p  class="nav__number">
+            <img src="./assets/images/phone.svg" alt="phone logo">
+            <span>+380 67661 5415</span>
+          </p>
+          <button class="nav__burger-btn" id="burger-btn">
+            <img src="./assets/icons/burger-menu-icon.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="nav__modal" id="nav-modal">
+          <ul class="nav__modal-links">
+            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Напрямки</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <h1 class="hero__title">виробництво меблів</h1>
+          <p class="hero__info">
+            Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+            комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
+            власного виробництва.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,25 @@
+.hero {
+  background: url(../../assets/images/hero-bg-transparent.png), url(../../assets/images/hero-mobile.png);
+  height: calc(100vh - (48px + 30px));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+
+  &__wrapper {
+    height: inherit;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: $text-h1;
+  }
+  
+  &__info {
+    margin-top: 28px;
+  }
+}
+
