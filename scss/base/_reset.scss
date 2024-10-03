@@ -20,5 +20,11 @@ img {
 button {
   border: none;
   cursor: pointer;
-  background: none;
+  background-color: #AE7B3C;
+  box-shadow: 0px 20px 25px 0px #0000000D;
+  padding: 22px 49px 22px 56px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $white-text;
 }
