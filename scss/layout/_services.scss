@@ -8,13 +8,16 @@
         justify-content: space-between;
         align-items: center;
         gap: 70px;
+        padding: 80px 10px;
     }
 
     &__title{
         margin-top: 100px;
-        font-size: 46px;
+        font-size: 24px;
         font-weight: 600;
-        line-height: 57.5px;
+        line-height: 32.4px;
+        text-align: center;
+        text-transform: uppercase;
         color: $white-text;
     }
 
@@ -26,9 +29,8 @@
 
         &s{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            column-gap: 250px;
-            row-gap: 70px;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
         }
 
         &__desc{

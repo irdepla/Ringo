@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // gap: 166px;
   }
 
   &__list {
@@ -22,7 +23,10 @@
   }
 
   &__burger-btn{
-    display: block;
+    display: flex;
+    border: none;
+    background: transparent;
+
   }
 
   &__modal {
@@ -36,7 +40,46 @@
     z-index: 1000;
     transition: right 0.3s ease-in-out; 
     padding: 20px;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__logo{
+      display: flex;
+      align-items: center;
+    }
+
+    &-links{
+      margin-top: 25px;
+    }
+
+
+    &__smm{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    &__number{
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+      gap: 7px;
+    }
+
+    
+    &__close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001; 
+    }
+    
+
 
     &--active {
       right: 0;
@@ -93,7 +136,12 @@
 @include desktop {
   .nav{
     &__number{
-      display: block;
+      display: flex;
+      align-items: center;
+    }
+    .nav__social-media{
+      display: flex;
+      align-items: center;
     }
   }
 }
