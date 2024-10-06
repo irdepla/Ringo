@@ -42,23 +42,57 @@
             <img src="./assets/images/facebook.svg" alt="instagram logo">
           </a>
 
+          <div  class="nav__number">
           <p class="nav__number">
             <img src="./assets/images/phone.svg" alt="phone logo">
             <span>+380 67661 5415</span>
-          </p>
+          </div>
           <button class="nav__burger-btn" id="burger-btn">
             <img src="./assets/icons/burger-menu-icon.svg" alt="" />
           </button>
         </div>
 
         <div class="nav__modal" id="nav-modal">
+
+
+          <div class="nav__modal__logo">
+            <div>
+              <img src="./assets/images/logo.svg" alt="" />
+            </div>
+            <button class="nav__modal__close-btn" id="close-btn">
+              <img src="./assets/icons/closebar icon.svg" alt="Close" />
+            </button>
+
+          </div>
+
           <ul class="nav__modal-links">
             <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Про компанію</a></li>
+            <li><a href="#">Переваги</a></li>
+            <li><a href="#">Етапи роботи</a></li>
           </ul>
+
+
+          <div>
+            <a href="#" class="nav__modal__smm">
+              <img src="./assets/images/instagram.svg" alt="instagram logo">
+              <img src="./assets/images/facebook.svg" alt="instagram logo">
+            </a>
+
+
+            <div  class="nav__modal__number">
+                <img src="./assets/images/phone.svg" alt="phone logo">
+                <span>+380 67661 5415</span>
+              </div>
+
+
+          </div>
+
+
+          <button class="nav__modal__btn universal__btn">
+            Обговорити проект
+          </button>
+          
         </div>
 
         <div class="nav__overlay"></div>
@@ -66,14 +100,88 @@
     </header>
 
     <main>
+
       <section class="hero">
         <div class="hero__wrapper container">
-          <h1 class="hero__title">виробництво меблів</h1>
+          <h1 class="hero__title">виробництво <br> меблів</h1>
           <p class="hero__info">
             Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
-            комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
+            комерційних приміщень, забезпечимо Вас  якісним меблевим продуктом
             власного виробництва.
           </p>
+          <button class="hero__btn universal__btn">
+            Обговорити проект
+          </button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features__wrapper">
+            <div class="features__title">
+                <h4>
+                    Основні напрямки
+                </h4>
+            </div>
+            <div class="features__cards">
+                <div class="features__card">
+                    <span class="features__card__order">01</span>
+                    <p class="features__card__title">
+                        Дизайн інтерєру
+                    </p>
+                    <img src="./assets/images/card-1.png" alt="luxury furniture" class="features__card__img">
+                </div>
+                <div class="features__card">
+                    <span class="features__card__order">02</span>
+                    <p class="features__card__title">
+                        Виробництво меблів
+                    </p>
+                    <img src="./assets/images/card-2.png" alt="luxury furniture" class="features__card__img">
+                </div>
+                <div class="features__card">
+                    <span class="features__card__order">03</span>
+                    <p class="features__card__title">
+                        Комплексне меблювання
+                    </p>
+                    <img src="./assets/images/card-3.png" alt="luxury furniture" class="features__card__img">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container services__wrapper">
+            <div class="services__title">
+                <h4>
+                    Ми забезпечемо <br> вас 
+                </h4>
+            </div>
+            <div class="services__cards">
+                <div class="services__card">
+                    <img src="./assets/images/wardrobe.svg" alt="wardrobe">
+                    <span class="services__card__desc">Меблями</span>
+                </div>
+                <div class="services__card">
+                    <img src="./assets/images/light bulb.svg" alt="wardrobe">
+                    <span class="services__card__desc">Освітленням</span>
+                </div>
+                <div class="services__card">
+                    <img src="./assets/images/oven.svg" alt="oven">
+                    <span class="services__card__desc">Побутовою технікою</span>
+                </div>
+                <div class="services__card">
+                    <img src="./assets/images/door.svg" alt="door">
+                    <span class="services__card__desc">Дверима</span>
+                </div>
+                <div class="services__card">
+                    <img src="./assets/images/floor.svg" alt="floor">
+                    <span class="services__card__desc">Стіновими панелями та 
+                        підлоговим покриттям</span>
+                </div>
+                <div class="services__card">
+                    <img src="./assets/images/brainstorm.svg" alt="brainstorm">
+                    <span class="services__card__desc">Проектуванням</span>
+                </div>
+            </div>
         </div>
       </section>
 
@@ -129,6 +237,119 @@
             </div>
           </li>
         </ul>
+      </section>
+
+      <section class="work">
+        <div class="container work__wrapper">
+          <div>
+            <h3 class="work__main__title">
+              Етапи роботи
+            </h3>
+          </div>
+          <div class="work__text-cards">
+            <div class="work__text-card">
+              <div class="text-card__order">
+                <p>
+                  01
+                </p>
+              </div>
+              <div class="text-card__info">
+                <h4 class="text-card__title">
+                  Підписання договору
+                </h4>
+                <p class="text-card__about">
+                  Визначаємось з бюджетом, <br> матеріалами та фурнітурою. <br>
+                  Вносимо правки в проект, <br>
+                  підписуємо пакет документів.
+                </p>
+              </div>
+            </div>
+            <div class="work__text-card">
+              <div class="text-card__order">
+                <p>
+                  02
+                </p>
+              </div>
+              <div class="text-card__info">
+                <h4 class="text-card__title">
+                  Виготовлення 
+                </h4>
+                <p class="text-card__about">
+                  Після підписання договору та визначення термінів, команда Рінго приступає до <br>
+                  найцікавішого - виробництва!
+                </p>
+              </div>
+            </div>
+            <div class="work__text-card">
+              <div class="text-card__order">
+                <p>
+                  03
+                </p>
+              </div>
+              <div class="text-card__info">
+                <h4 class="text-card__title">
+                  Встановлення
+                </h4>
+                <p class="text-card__about">
+                  По готовності виробництва <br>  починаємо монтаж на обєкті. <br>  У домовлений час виконуємо <br> доставку та монтаж.
+                </p>
+              </div>
+            </div>
+            <div class="work__text-card">
+              <div class="text-card__order">
+                <p>
+                  04
+                </p>
+              </div>
+              <div class="text-card__info">
+                <h4 class="text-card__title">
+                  Новосілля
+                </h4>
+                <p class="text-card__about">
+                  По закінченню робимо перевірку та підписуємо акт закінчення робівт. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="presents">
+        <div class="presents__wrapper container">
+          <img src="./assets/images/present_no1.svg" alt="presents_img1">
+          <div class="presents__content">
+          <h5>Рінго роздає <br> подарунки!</h5>
+          <p>При замовленні до нового року, отримай цінний подарунок для свого комфорту</p>
+          <button>Хочу подарунок</button>
+          </div>
+        <img src="./assets/images/present_no2.svg" alt="presents_img2">
+        </div>
+      </section>
+
+      <section class="partners container">
+        <h5>Наші партнери</h5>
+        <ul class="partners__list">
+          <li class="partners__list__item">
+            <img src="./assets/images/franke.svg" alt="brands">
+          </li>
+          <li class="partners__list__item">
+            <img src="./assets/images/hafele.svg" alt="brands">
+          </li>
+          <li class="partners__list__item">
+            <img src="./assets/images/art_zerkalo.svg" alt="brands">
+          </li>
+          <li class="partners__list__item">
+            <img src="./assets/images/emir.svg" alt="brands">
+          </li>
+        </ul>
+        <div class="partners__buttons">
+          <button>
+            <img src="./assets/icons/arrow_left.svg" alt="arrow">
+          </button>
+          <button>
+            <img src="./assets/icons/arrow_right.svg" alt="arrow">
+          </button>
+        </div>
       </section>
 
     </main>

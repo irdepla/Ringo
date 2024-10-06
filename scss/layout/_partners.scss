@@ -1,0 +1,11 @@
+.partners {
+    padding-top: 80px;
+
+    & h5 {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 135%;
+        text-transform: uppercase;
+    }
+}

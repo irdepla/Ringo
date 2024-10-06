@@ -1,6 +1,6 @@
 .hero {
-  background: url(../../assets/images/hero-bg-transparent.png), url(../../assets/images/hero-mobile.png);
   height: calc(100vh - (48px + 30px));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%), url(../../assets/images/hero-mobile\ \(2\).png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,14 +12,35 @@
     display: flex; 
     flex-direction: column; 
     justify-content: center;
+    align-items: center;
   }
 
   &__title {
-    font-size: $text-h1;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    text-transform: uppercase;
   }
   
   &__info {
     margin-top: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    text-align: center;
+  }
+
+  &__btn{
+    margin-top: 40px;
+  }
+}
+
+
+
+@include mobile-large{
+  .hero{
+    // background: url(..//../assets/images/hero-mobile.png);
   }
 }
 
