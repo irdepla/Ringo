@@ -7,227 +7,77 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <div class="container nav__wrapper">
-          <div class="nav__logo">
-            <img src="./assets/images/logo.svg" alt="" />
-          </div>
-
-          <ul class="nav__list">
-            <li class="nav__list__item">
-              <a href="">
-                <span>Напрямки</span>
-              </a>
-            </li>
-            <li class="nav__list__item">
-              <a href="">
-                <span>Про компанію</span>
-              </a>
-            </li>
-            <li class="nav__list__item">
-              <a href="">
-                <span>Переваги</span>
-              </a>
-            </li>
-            <li class="nav__list__item">
-              <a href="">
-                <span>Етапи роботи</span>
-              </a>
-            </li>
-          </ul>
-
-          <a href="#" class="nav__social-media">
-            <img src="./assets/images/instagram.svg" alt="instagram logo" />
-            <img src="./assets/images/facebook.svg" alt="instagram logo" />
-          </a>
-
-          <div class="nav__number">
-            <p class="nav__number">
-              <img src="./assets/images/phone.svg" alt="phone logo" />
-              <span>+380 67661 5415</span>
-            </p>
-          </div>
-
-          <button class="nav__burger-btn" id="burger-btn">
-            <img src="./assets/icons/burger-menu-icon.svg" alt="" />
-          </button>
-        </div>
-
-        <div class="nav__modal" id="nav-modal">
-          <ul class="nav__modal-links">
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-            <li><a href="#">Напрямки</a></li>
-          </ul>
-        </div>
-
-        <div class="nav__overlay"></div>
-      </nav>
-    </header>
+  
 
     <main>
-      <section class="hero">
-        <div class="hero__wrapper container">
-          <h1 class="hero__title">
-            виробництво <br />
-            меблів
-          </h1>
-          <p class="hero__info">
-            Ми виконуємо комплексне виготовлення корпусних меблів <br />
-            для житлових і комерційних приміщень, забезпечимо Вас <br />
-            якісним меблевим продуктом власного виробництва.
-          </p>
-          <button class="hero__btn">Обговорити проект</button>
+     
+      <section class="obgovorimo">
+        <div class="container">
+          <div class="obgovorimo__wrapper">
+            <div class="obgovorimo__card">
+              <h3 class="obgovorimo__title">Обговоримо <br> ваш проект?</h3>
+              <p class="obgovorimo__text">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
+             <input class="obgovorimo__inp" type="text" placeholder="Ім'я" name="" id="">
+              <input class="obgovorimo__inp" type="number" placeholder="Номер телефону" id="">
+              <div class="obgovorimo__project">
+               <span><img src="./assets/icons/obgovorimo-card-img.svg" alt=""></span>
+               <p>Прикріпити проект</p>
+              </div>
+              <button class="btn">Відправити</button>
+              <div class="obgovorimo__users-info">
+               <span><img src="./assets/icons/obgovorimo-card-icon2.svg" alt=""></span>
+               <p>Даю згоду на оброблення персональних даних</p>
+              </div>
+            </div>
+        <div class="obgovorimo__img">
+         <div class="obgovorimo__beckground"></div>
         </div>
-      </section>
-      <section class="features">
-        <div class="container features__wrapper">
-          <div class="features__title">
-            <h4>Основні напрямки</h4>
-          </div>
-          <div class="features__cards">
-            <div class="features__card">
-              <span class="features__card__order">01</span>
-              <p class="features__card__title">Дизайн інтерєру</p>
-              <img
-                src="./assets/images/card-1.png"
-                alt="luxury furniture"
-                class="features__card__img"
-              />
             </div>
-            <div class="features__card">
-              <span class="features__card__order">02</span>
-              <p class="features__card__title">Виробництво меблів</p>
-              <img
-                src="./assets/images/card-2.png"
-                alt="luxury furniture"
-                class="features__card__img"
-              />
-            </div>
-            <div class="features__card">
-              <span class="features__card__order">03</span>
-              <p class="features__card__title">Комплексне меблювання</p>
-              <img
-                src="./assets/images/card-3.png"
-                alt="luxury furniture"
-                class="features__card__img"
-              />
-            </div>
+
+            
           </div>
         </div>
-      </section>
-      <section class="services">
-        <div class="container services__wrapper">
-          <div class="services__title">
-            <h4>Ми забезпечемо вас</h4>
-          </div>
-          <div class="services__cards">
-            <div class="services__card">
-              <img src="./assets/images/wardrobe.svg" alt="wardrobe" />
-              <span class="services__card__desc">Меблями</span>
-            </div>
-            <div class="services__card">
-              <img src="./assets/images/light bulb.svg" alt="wardrobe" />
-              <span class="services__card__desc">Освітленням</span>
-            </div>
-            <div class="services__card">
-              <img src="./assets/images/oven.svg" alt="oven" />
-              <span class="services__card__desc">Побутовою технікою</span>
-            </div>
-            <div class="services__card">
-              <img src="./assets/images/door.svg" alt="door" />
-              <span class="services__card__desc">Дверима</span>
-            </div>
-            <div class="services__card">
-              <img src="./assets/images/floor.svg" alt="floor" />
-              <span class="services__card__desc"
-                >Стіновими панелями та підлоговим покриттям</span
-              >
-            </div>
-            <div class="services__card">
-              <img src="./assets/images/brainstorm.svg" alt="brainstorm" />
-              <span class="services__card__desc">Проектуванням</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about container">
-        <h4 class="about__top_title">
-          Проект Рінго Україна - створений виконувати об`єктні задачі
-          комплексного меблювання житлових та комерційних приміщень.
-        </h4>
-        <ul class="about__top_list">
-          <li class="about__top_list__item">
-            <img src="./assets/images/Крапка.svg" alt="about_ping" />
-            <p>
-              Наш колектив націлений на результат - вчасно реалізувати проект на
-              найвищому рівні. Ми забезпечуємо спокій замовника та вирішуємо
-              будь-які задачі
-            </p>
-          </li>
-          <li class="about__top_list__item">
-            <img src="./assets/images/Крапка.svg" alt="about_ping" />
-            <p>
-              Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або
-              персональний помічник власника бізнесу, квартири чи салону
-            </p>
-          </li>
-        </ul>
-        <h4 class="about__bottom_title">Наші переваги</h4>
-        <ul class="about__bottom_list">
-          <li class="about__bottom_list__item">
-            <span>01</span>
-            <div>
-              <h4>Мобільність</h4>
-              <p>Проводимо зустрічі на об`єктах в затишних закладах Києва</p>
-            </div>
-          </li>
-          <li class="about__bottom_list__item">
-            <span>02</span>
-            <div>
-              <h4>Надійність</h4>
-              <p>
-                Система нашої роботи зосереджена на якості та термінах
-                завершення проекту
-              </p>
-            </div>
-          </li>
-          <li class="about__bottom_list__item">
-            <span>03</span>
-            <div>
-              <h4>Якість</h4>
-              <p>Виготовляємо виключно з перевірених європейських брендів</p>
-            </div>
-          </li>
-          <li class="about__bottom_list__item">
-            <span>04</span>
-            <div>
-              <h4>Професіоналізм</h4>
-              <p>
-                Наша команда - це клуб професіоналів, об`єднаних в одній
-                компанії
-              </p>
-            </div>
-          </li>
-          <li class="about__bottom_list__item">
-            <span>05</span>
-            <div>
-              <h4>Вигідність</h4>
-              <p>
-                Ми відмовились від шоу-руму та офісу на користь вартості та
-                мобільності
-              </p>
-            </div>
-          </li>
-        </ul>
       </section>
 
-      <section>
-        <div >nimadir</div>
+      <section class="roboti">
+        <div class="container">
+          <h3 class="roboti__title">Етапи роботи</h3>
+<div class="roboti__wrapper">
+    <div class="roboti__card">
+    <p class="roboti__nuber-text">01</p>
+    <img class="roboti__ellipse" src="./assets/icons/Ellipse for roboti.svg" alt="">
+    <br> 
+    <p class="roboti__info">Підписання договору</p>
+    <p>Визначаємось з бюджетом, матеріалами та фурнітурою. 
+      Вносимо правки в проект, 
+      підписуємо пакет документів.</p>
+  </div>
+  <div class="roboti__card">
+    <p class="roboti__nuber-text">02</p>
+    <img class="roboti__ellipse" src="./assets/icons/Ellipse for roboti.svg" alt="">
+    <br>
+    <p class="roboti__info">Виготовлення </p>
+    <p>Після підписання договору та визначення термінів, команда Рінго приступає до 
+      найцікавішого - виробництва!</p>
+  </div>
+  <div class="roboti__card">
+    <p class="roboti__nuber-text">03</p>
+    <img class="roboti__ellipse" src="./assets/icons/Ellipse for roboti.svg" alt="">
+    <br>
+    <p class="roboti__info">Встановлення</p>
+    <p>По готовності виробництва  починаємо монтаж на обєкті.  У домовлений час виконуємо доставку та монтаж.</p>
+  </div>
+  <div class="roboti__card">
+    <p class="roboti__nuber-text">04</p>
+    <img class="roboti__ellipse" src="./assets/icons/Ellipse for roboti.svg" alt="">
+    <br>
+    <p class="roboti__info">Новосілля</p>
+    <p>По закінченню робимо перевірку та підписуємо акт закінчення робівт. </p>
+  </div>
+</div>
+        </div>
       </section>
+
     </main>
 
     <script src="./js/index.js"></script>

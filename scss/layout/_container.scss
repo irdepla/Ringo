@@ -1,12 +1,13 @@
 .container {
   max-width: 100%;
-  padding: 15px $container-padding;
-  margin: 0 auto;
+  padding: 0 $container-padding;
+  margin: 0 ;
 }
 
 @include mobile-large {
   .container {
-    max-width: 620px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -19,6 +20,8 @@
 @include desktop {
   .container {
     max-width: 1200px;
+    margin: 0 auto;
+
   }
 }
 
