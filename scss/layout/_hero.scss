@@ -1,6 +1,6 @@
 .hero {
   height: calc(100vh - (48px + 30px));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%), url(../../assets/images/hero-mobile\ \(2\).png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%), url(../../assets/images/hero-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,6 +40,6 @@
 
 @include mobile-large{
   .hero{
-    // background: url(..//../assets/images/hero-mobile.png);
+    // background: url(..//../assets/images/hero-tablet.png);
   }
 }

@@ -51,6 +51,9 @@
 
     &-links{
       margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
     }
 
 
@@ -107,20 +110,80 @@
 
 
 @include mobile-large {
+
+  .container{
+    width: 600px;
+    padding: 20px;
+  }
   .nav {
 
     &__social-media {
-      display: block;
+      display: flex;
+      align-items: center;
     }
 
     &__number{
-      display: block;
+      display: flex;
+      align-items: center;
     }
+
+
+    &__modal{
+      &__logo{
+       div{
+        display: none;
+       }
+
+
+       .nav__modal__number{
+        display: flex;
+       }
+
+      }
+
+      &__smm{
+        display: none;
+      }
+
+      &__number{
+        position: relative;
+        display: flex;
+        gap: 7px;
+
+        img, span{
+          position: absolute;
+          bottom: 327px;
+        }
+        span{
+          margin-left: 20px;
+        }
+      }
+
+      &__btn{
+        display: none;
+      }
+    }
+
+
   }
 }
 
 @include tablet {
   .nav {
+
+    .container{
+      width: 960px;
+    }
+
+
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+    }
+
     &__list {
       display: flex;
       gap: 20px;
@@ -135,6 +198,10 @@
 
 @include desktop {
   .nav{
+
+    .container{
+      width: 1200px;
+    }
     &__number{
       display: flex;
       align-items: center;
